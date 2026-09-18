@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Clean Technique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="Clean Technique Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h1>Contact Us & Locations</h1>
+
+        <!-- Plain-text contact details -->
+        <div class="contact-details">
+            <p><strong>Phone:</strong> 071 234 5678</p>
+            <p><strong>Email:</strong> info@cleantechnique.co.za</p>
+            <p><strong>Operating Hours:</strong> Monday - Saturday: 08:00 - 18:00</p>
+        </div>
+
+        <!-- Multi-Location Section -->
+        <div class="grid">
+            <div class="card">
+                <h3>Johannesburg Branch</h3>
+                <p>Service Area: All Johannesburg Suburbs, Sandton, Rosebank, Midrand</p>
+                <p>Phone: 071 234 5678 (JHB)</p>
+            </div>
+
+            <div class="card">
+                <h3>Pretoria Branch</h3>
+                <p>Service Area: All Pretoria Suburbs, Centurion, Hatfield, Brooklyn</p>
+                <p>Phone: 071 234 5678 (PTA)</p>
+            </div>
+        </div>
+
+        <!-- Embedded map placeholder -->
+        <div class="map-section">
+            <h2>Find Us on the Map</h2>
+            <div class="map-wrapper">
+                <!-- Google Maps iframe wrapper div for JHB & PTA -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14321!2d28.0473!3d-26.2041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDEyJzE0LjgiUyAyOMKwMDInNTAuMyJF!5e0!3m2!1sen!2sza!4v1234567890"
+                    width="100%" 
+                    height="350" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Quick message contact form -->
+        <h2>Quick Message Form</h2>
+
+        <form method="POST" action="#">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email-contact">Email</label>
+            <input type="email" id="email-contact" name="email" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject">
+
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+    </section>
+
+    <footer>
+        <p>2025 Clean Technique | Johannesburg & Pretoria</p>
+    </footer>
+
+</body>
+</html>

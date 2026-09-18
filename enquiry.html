@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Quote Enquiry - Clean Technique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="Clean Technique Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h1>Service Quote Enquiry Form</h1>
+        <p>
+            Please fill in the form below to request a quote. Our team will review your 
+            details and contact you within 24 hours with pricing for Johannesburg or Pretoria.
+        </p>
+
+        <!-- Comprehensive HTML form -->
+        <form method="POST" action="#">
+
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="location">Location / City</label>
+            <select id="location" name="location" required>
+                <option value="">-- Select Location --</option>
+                <option value="Johannesburg">Johannesburg</option>
+                <option value="Pretoria">Pretoria</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label>Service Required</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="service" value="Deep Cleaning"> Deep Cleaning</label>
+                <label><input type="checkbox" name="service" value="Post-Occupational"> Post-Occupational Cleaning</label>
+                <label><input type="checkbox" name="service" value="Carpet Care"> Carpet Care</label>
+                <label><input type="checkbox" name="service" value="Upholstery Care"> Upholstery Care</label>
+                <label><input type="checkbox" name="service" value="Commercial"> Commercial & Office Cleaning</label>
+            </div>
+
+            <label>Property Type</label>
+            <div class="radio-group">
+                <label><input type="radio" name="property" value="Residential"> Residential</label>
+                <label><input type="radio" name="property" value="Commercial"> Commercial</label>
+                <label><input type="radio" name="property" value="Airbnb"> Airbnb</label>
+            </div>
+
+            <label for="message">Additional Details / Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us more about your cleaning needs"></textarea>
+
+            <button type="submit" class="btn">Request Quote</button>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>2025 Clean Technique</p>
+    </footer>
+
+</body>
+</html>
