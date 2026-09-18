@@ -1,0 +1,329 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Calibri, 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #FFFFFF;
+    color: #078b12;
+}
+
+/* Header */
+header {
+    background-color: #FFFFFF;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header img {
+    height: 60px;
+    width: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #078b12;
+    color: ;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+/* Hero Section - index.html */
+.hero {
+    background-size: cover;
+    background-position: center;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 120px 5%;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #28A745;
+    color: #FFFFFF;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1e7e34;
+}
+
+/* General Content Sections */
+.page-header {
+    background-color: #007BFF;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 60px 5%;
+}
+
+.page-header h1 {
+    font-size: 36px;
+}
+
+.page-header p {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.content {
+    padding: 50px 5%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.content h2 {
+    color: #007BFF;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.content p {
+    margin-bottom: 15px;
+}
+
+.content ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Value Prop - index.html */
+.value-prop {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 60px 5%;
+}
+
+.value-prop h2 {
+    color: #007BFF;
+    margin-bottom: 15px;
+}
+
+/* Grid Layout for Services */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 40px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-overview {
+    text-align: center;
+    padding: 40px 5% 20px 5%;
+}
+
+.services-overview h2 {
+    color: #007BFF;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3,
+.card h2 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #28A745;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* CTA Banner - services.html */
+.cta-banner {
+    background-color: #28A745;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 60px 5%;
+    margin-top: 40px;
+}
+
+.cta-banner .btn {
+    background-color: #FFFFFF;
+    color: #28A745;
+    margin-top: 15px;
+}
+
+.cta-banner .btn:hover {
+    background-color: #f1f1f1;
+}
+
+/* Forms - enquiry.html & contact.html */
+form {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+.checkbox-group label,
+.radio-group label {
+    font-weight: normal;
+    display: block;
+    margin: 8px 0;
+}
+
+.checkbox-group,
+.radio-group {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Contact Page Specifics */
+.contact-details {
+    background-color: #FFFFFF;
+    border-left: 4px solid #007BFF;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.map-section {
+    margin: 40px 0;
+}
+
+.map-wrapper {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #212529;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 30px 5%;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #28A745;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FFFFFF;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+/* Responsive - Mobile First */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 5px 10px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero {
+        padding: 80px 5%;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
