@@ -33,7 +33,7 @@ header img {
 nav a {
     text-decoration: none;
     color: #078b12;
-    color: ;
+    color:white ;
     margin-left: 20px;
     font-weight: 600;
     transition: color 0.3s ease;
@@ -45,13 +45,21 @@ nav a:hover {
 
 /* Hero Section - index.html */
 .hero {
+    width: 90%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/Hero.jpeg');
     background-size: cover;
     background-position: center;
-    background-color: #007BFF;
+    background-repeat: no-repeat;
+    background-color: #222;
     color: #FFFFFF;
-    text-align: center;
-    padding: 120px 5%;
+    padding: 8rem 5%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
+
 
 .hero h1 {
     font-size: 42px;
