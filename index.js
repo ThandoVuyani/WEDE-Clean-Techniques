@@ -1,6 +1,6 @@
 console.log("Javascript loaded");
 let slideIndex = 0;
-const slides = document.querySelectorAll(".hero.slide");
+const slides = document.querySelectorAll(".slide");
 function showSlide(index) {
     slides.forEach(slide => slide.classList.remove("active"));
     slides[index].classList.add("active");
