@@ -59,6 +59,16 @@ nav a:hover {
     background-position: center;
 }
 
+.slide.active {
+    opacity: 1;
+}
+#slide1 {
+    background-image: url('images/Hero.jpeg');
+}
+#slide2 {
+    background-image: url('images/CT image 2.jpeg');
+}
+
 /* Hero Section - index.html */
 .hero {
     width: 90%;
