@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let isValid = true;
 
         // Validate Full Name
-        if (fullname.legth < 3) {
+        if (fullname.length < 3) {
             alert("Full Name must be at least 3 characters long.");
             isValid = false;
         }
@@ -35,8 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         // If all validations pass, submit the form
-          if (isValid) { alert("Thank you " + fullName + "! Quote request sent for " + location);form.reset();
-  }
+        if (isValid) {
+            alert("Thank you " + fullname + "! Quote request sent for " + location);
+            form.reset();
         }
     });
 });
